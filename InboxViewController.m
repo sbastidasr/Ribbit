@@ -7,6 +7,7 @@
 //
 
 #import "InboxViewController.h"
+#import <Parse/Parse.h>
 
 @interface InboxViewController ()
 
@@ -18,7 +19,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    PFUser *currentUser = [PFUser currentUser];
+    if (currentUser) {
+        NSLog(@"current user: %@", currentUser.username);
+    } else {
+          NSLog(@"Entered");
     [self performSegueWithIdentifier:@"showLogin" sender:self];
+      
+    }
+    
+   
 }
 
 #pragma mark - Table view data source
@@ -42,9 +52,15 @@
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if([segue.identifier isEqualToString:@"showLogin"])
+    {
+        [segue.destinationViewController setHidesBottomBarWhenPushed:YES];
+    }
 }
 
+- (IBAction)logout:(id)sender {
+    [PFUser logOut];
+    [self performSegueWithIdentifier:@"showLogin" sender:self];
+}
 
 @end

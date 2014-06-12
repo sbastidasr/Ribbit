@@ -7,11 +7,17 @@
 //
 
 #import "AQAppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation AQAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [Parse setApplicationId:@"9eEwImW3cJGBwK4koEXRNPRX9O3HDvNQz6pjP0VE"
+                  clientKey:@"BCWBjsiEo8DApcRMf837KGkm9naYb23lDUg3sJVz"];
+    
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+
     return YES;
 }
 

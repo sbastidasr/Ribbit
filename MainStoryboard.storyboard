@@ -88,6 +88,34 @@
             </objects>
             <point key="canvasLocation" x="2091" y="-346"/>
         </scene>
+        <!--Image View Controller-->
+        <scene sceneID="rrS-1N-XAv">
+            <objects>
+                <viewController id="IpR-Vh-ap3" customClass="ImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iUL-Fc-InA"/>
+                        <viewControllerLayoutGuide type="bottom" id="mPl-QO-Ofa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WNK-Rc-MWC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AL2-av-Hxy">
+                                <rect key="frame" x="0.0" y="62" width="320" height="458"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iA4-mj-eMQ"/>
+                    <connections>
+                        <outlet property="imageView" destination="AL2-av-Hxy" id="jVL-1v-RbL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dC0-t7-FpU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2059" y="-1688"/>
+        </scene>
         <!--Camera View Controller - Recipients-->
         <scene sceneID="bi2-xW-pkS">
             <objects>
@@ -137,7 +165,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="CDO-Nw-uY0">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="CDO-Nw-uY0">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CDO-Nw-uY0" id="xAK-xB-9Nz">
@@ -160,6 +188,7 @@
                     </navigationItem>
                     <connections>
                         <segue destination="gkX-VM-iRb" kind="push" identifier="showLogin" id="1B9-6b-voH"/>
+                        <segue destination="IpR-Vh-ap3" kind="push" identifier="showImage" id="LKy-j6-gez"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dWA-u1-69p" userLabel="First Responder" sceneMemberID="firstResponder"/>

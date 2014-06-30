@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9EAF7AE51951F2AE00FACD8E /* icon_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EAF7AE11951F2AE00FACD8E /* icon_image.png */; };
+		9EAF7AE61951F2AE00FACD8E /* icon_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EAF7AE21951F2AE00FACD8E /* icon_image@2x.png */; };
+		9EAF7AE71951F2AE00FACD8E /* icon_video.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EAF7AE31951F2AE00FACD8E /* icon_video.png */; };
+		9EAF7AE81951F2AE00FACD8E /* icon_video@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EAF7AE41951F2AE00FACD8E /* icon_video@2x.png */; };
+		9EAF7AEB1951F49400FACD8E /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EAF7AEA1951F49400FACD8E /* ImageViewController.m */; };
+		9EAF7AED1961BCE900FACD8E /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EAF7AEC1961BCE900FACD8E /* MediaPlayer.framework */; };
 		EA5ECD74194384C100410F13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA5ECD73194384C100410F13 /* Foundation.framework */; };
 		EA5ECD76194384C100410F13 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA5ECD75194384C100410F13 /* CoreGraphics.framework */; };
 		EA5ECD78194384C100410F13 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA5ECD77194384C100410F13 /* UIKit.framework */; };
@@ -55,6 +61,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9EAF7AE11951F2AE00FACD8E /* icon_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_image.png; sourceTree = "<group>"; };
+		9EAF7AE21951F2AE00FACD8E /* icon_image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_image@2x.png"; sourceTree = "<group>"; };
+		9EAF7AE31951F2AE00FACD8E /* icon_video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_video.png; sourceTree = "<group>"; };
+		9EAF7AE41951F2AE00FACD8E /* icon_video@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_video@2x.png"; sourceTree = "<group>"; };
+		9EAF7AE91951F49400FACD8E /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageViewController.h; path = ../ImageViewController.h; sourceTree = "<group>"; };
+		9EAF7AEA1951F49400FACD8E /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageViewController.m; path = ../ImageViewController.m; sourceTree = "<group>"; };
+		9EAF7AEC1961BCE900FACD8E /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		EA5ECD70194384C100410F13 /* Ribbit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ribbit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA5ECD73194384C100410F13 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EA5ECD75194384C100410F13 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -107,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EAF7AED1961BCE900FACD8E /* MediaPlayer.framework in Frameworks */,
 				EAB0136D194517C200D66308 /* SystemConfiguration.framework in Frameworks */,
 				EAB0136B194517BC00D66308 /* StoreKit.framework in Frameworks */,
 				EAB01369194517AF00D66308 /* Security.framework in Frameworks */,
@@ -136,6 +150,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9EAF7AE01951F2AE00FACD8E /* inbox_icons */ = {
+			isa = PBXGroup;
+			children = (
+				9EAF7AE11951F2AE00FACD8E /* icon_image.png */,
+				9EAF7AE21951F2AE00FACD8E /* icon_image@2x.png */,
+				9EAF7AE31951F2AE00FACD8E /* icon_video.png */,
+				9EAF7AE41951F2AE00FACD8E /* icon_video@2x.png */,
+			);
+			path = inbox_icons;
+			sourceTree = "<group>";
+		};
 		EA5ECD67194384C000410F13 = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +185,7 @@
 		EA5ECD72194384C100410F13 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9EAF7AEC1961BCE900FACD8E /* MediaPlayer.framework */,
 				EAB0136C194517C200D66308 /* SystemConfiguration.framework */,
 				EAB0136A194517BC00D66308 /* StoreKit.framework */,
 				EAB01368194517AF00D66308 /* Security.framework */,
@@ -181,6 +207,8 @@
 		EA5ECD79194384C100410F13 /* Ribbit */ = {
 			isa = PBXGroup;
 			children = (
+				9EAF7AE91951F49400FACD8E /* ImageViewController.h */,
+				9EAF7AEA1951F49400FACD8E /* ImageViewController.m */,
 				EAB0137A1947970F00D66308 /* CameraViewController.h */,
 				EAB0137B1947970F00D66308 /* CameraViewController.m */,
 				EAB0137419462D4F00D66308 /* EditFriendsViewController.h */,
@@ -233,6 +261,7 @@
 		EAB01355194389EB00D66308 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				9EAF7AE01951F2AE00FACD8E /* inbox_icons */,
 				EAB01349194389E000D66308 /* camera.png */,
 				EAB0134A194389E000D66308 /* camera@2x.png */,
 				EAB0134B194389E000D66308 /* friends.png */,
@@ -319,15 +348,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EAF7AE71951F2AE00FACD8E /* icon_video.png in Resources */,
 				EAB01348194385E400D66308 /* MainStoryboard.storyboard in Resources */,
 				EAB01351194389E000D66308 /* friends.png in Resources */,
+				9EAF7AE51951F2AE00FACD8E /* icon_image.png in Resources */,
 				EAB01352194389E000D66308 /* friends@2x.png in Resources */,
 				EAB01350194389E000D66308 /* camera@2x.png in Resources */,
 				EAB01353194389E000D66308 /* inbox.png in Resources */,
 				EA5ECD7E194384C100410F13 /* InfoPlist.strings in Resources */,
+				9EAF7AE61951F2AE00FACD8E /* icon_image@2x.png in Resources */,
 				EAB0134F194389E000D66308 /* camera.png in Resources */,
 				EA5ECD86194384C100410F13 /* Images.xcassets in Resources */,
 				EAB01354194389E000D66308 /* inbox@2x.png in Resources */,
+				9EAF7AE81951F2AE00FACD8E /* icon_video@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +385,7 @@
 				EAB0137919476C2A00D66308 /* FriendsViewController.m in Sources */,
 				EA5ECD80194384C100410F13 /* main.m in Sources */,
 				EAB013591943916900D66308 /* InboxViewController.m in Sources */,
+				9EAF7AEB1951F49400FACD8E /* ImageViewController.m in Sources */,
 				EAB0137619462D4F00D66308 /* EditFriendsViewController.m in Sources */,
 				EAB0137319451F2100D66308 /* SignupViewController.m in Sources */,
 			);
